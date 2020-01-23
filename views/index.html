@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="K.T Motshoana" />
+    <meta name="description" content="A learners licence test web app for primarily code 2 and code 3" />
+    <meta name="keywords" content="South Afican Learners Licence Test, Code2, Code3 leraners licence questions" />
+    <meta name="theme-color" content="#ff4500" />
+    <title>LLT</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="../icons/144.png" />
+    <link rel="manifest" href="../manifest.json"/>
+    <script type="module" src="../js/main.js"></script>
+    <script defer>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js')
+                .then(sw => {
+                    // console.log(`service worker registered at ${sw.scope}`);
+                }).catch(err => console.error)
+        }
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+
+        <label id="dark-mode" class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+        </label>
+        <select id="categories">
+            <optgroup>
+                <option value="roadRules">CHOOSE AN OPTION</option>
+                <option value="roadRules">Road Rules</option>
+                <option value="roadSurfaceMarking">Road Surface Markings</option>
+                <option value="warningSigns">Signs</option>
+                <option value="heavyVehicleControls">Heavy Vehicle Controls</option>
+                <option value="lightVehicleControls"> Light Vehicle Controls</option>
+            </optgroup>
+        </select>
+        <button id="about">About</button>
+    </nav>
+    <article id="install_banner" role="banner">
+        <p>
+            <strong>Quick and easy install less then
+                <u>3 clicks </u>
+            </strong>
+        </p>
+        <h3>no app store needed !</h3>
+        <button id="installBtn">Install app</button>
+    </article>
+
+    <section id="container">
+        <article id="question">
+
+            <h4 id="qtext">LOADING...</h4>
+
+        </article>
+        <article id="img">
+
+        </article>
+        <article id="answers">
+
+            <h3>Choose correct answer below: </h3>
+            <form id="correct">
+                <label for="1" class="ans">
+                    <input id="1" type="checkbox" value="Loading" />
+                    <span>Loading...</span>
+                </label>
+                <label for="2" class="ans">
+                    <input id="2" type="checkbox" value="Loading" />
+                    <span>Loading...</span>
+                </label>
+                <label for="3" class="ans">
+                    <input id="3" type="checkbox" value="Loading" />
+                    <span>Loading...</span>
+                </label>
+                <input type="submit" value="submit answer" />
+            </form>
+        </article>
+    </section>
+    <article id="page-control" role="navigation">
+        <h3>question 0/0</h3>
+    </article>
+</body>
+
+</html>
