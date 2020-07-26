@@ -11,4 +11,4 @@ a mutliple choice qiz on the following categories
 4 Heavy Vechicle Controls
 
 5 Ligth Vechicle Controls
- web app availbale [here](https://southafricalearnerslicense.github.io/)
+ web app available [here](https://southafricalearnerslicense.github.io/), I personally used it along side a K53 to obtain my C1 learners license on early March 2020.
